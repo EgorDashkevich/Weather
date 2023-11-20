@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_menu"
+    app:route="menu"
+    app:startDestination="@id/fragment_main">
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.myapplication.presenter.screen.main.MainFragment"
+        android:label="fragment_main"
+        app:route="main"
+        tools:layout="@layout/fragment_main" >
+    </fragment>
+    <fragment android:id="@+id/fragment_test1"
+        android:name="com.example.myapplication.presenter.screen.test1.Test1Fragment"
+        android:label="fragment_test1"
+        app:route="test1"
+        tools:layout="@layout/fragment_test1" />
+    <fragment android:id="@+id/fragment_test2"
+        android:name="com.example.myapplication.presenter.screen.test2.Test2Fragment"
+        android:label="fragment_test2"
+        app:route="test2"
+        tools:layout="@layout/fragment_test2" />
+    <fragment android:id="@+id/fragment_test3"
+        android:name="com.example.myapplication.presenter.screen.test3.Test3Fragment"
+        android:label="fragment_test3"
+        app:route="test3"
+        tools:layout="@layout/fragment_test3" />
+    <fragment android:id="@+id/fragment_test4"
+        android:name="com.example.myapplication.presenter.screen.test4.Test4Fragment"
+        android:label="fragment_test4"
+        app:route="test4"
+        tools:layout="@layout/fragment_test4" />
+
+
+</navigation>

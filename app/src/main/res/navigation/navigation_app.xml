@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:route="app"
+    app:startDestination="@id/fragment_menu">
+    <fragment
+        android:id="@+id/fragment_menu"
+        android:name="com.example.myapplication.presenter.screen.menu.MenuFragment"
+        android:label="fragment_menu"
+        app:route="menu"
+        tools:layout="@layout/fragment_menu"/>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.myapplication.presenter.screen.main.details.DetailsFragment"
+        android:label="DetailsFragment" >
+    </fragment>
+
+
+</navigation>
